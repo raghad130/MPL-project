@@ -1,0 +1,22 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #71a2d37c;
+  color: #212529;
+  line-height: 1.5;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.clinic-card {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #6c757d;
+}

@@ -20,3 +20,13 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
+
+const clinicRoutes = require('./routes/clinics');
+
+
+app.use('/clinics', clinicRoutes);
+
+
+app.use((req, res) => {
+  res.status(404).render('404', { title: '404 - Page Not Found' });
+});

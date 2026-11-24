@@ -20,7 +20,10 @@ app.use('/clinics', clinicRoutes);
 app.use('/', aboutRoutes);
 
 app.use((req, res) => {
-  res.status(404).render('404', { title: '404 - Page Not Found' });
+  res.status(404).render('404', {
+     title: '404 - Page Not Found',
+    message: 'The page you requested could not be found.'
+   });
 });
 
 app.listen(PORT, () => {

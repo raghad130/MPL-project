@@ -23,7 +23,8 @@ router.get('/:id', (req, res) => {
 
   if (!clinic) {
     return res.status(404).render('404', {
-      title: 'Clinic Not Found'
+      title: 'Clinic Not Found',
+      message: 'We could not find a clinic with that ID.'
     });
   }
 

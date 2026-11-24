@@ -1,0 +1,16 @@
+<%- include('./partials/header') %>
+
+<main class="container mt-4">
+  <h1><%= clinic.name %></h1>
+  <p class="mt-2"><strong>Specialty:</strong> <%= clinic.specialty %></p>
+
+  <% if (clinic.open) { %>
+    <p><span class="badge bg-success">Accepting Visits</span></p>
+  <% } else { %>
+    <p><span class="badge bg-secondary">Currently Full</span></p>
+  <% } %>
+
+  <a href="/clinics" class="btn btn-secondary mt-3">Back to Clinics</a>
+</main>
+
+<%- include('./partials/footer') %>

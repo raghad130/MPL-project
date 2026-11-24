@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
     });
   }
 
-  res.render('clinic-detail', {
+  res.render('clinic-details', {
     title: `${clinic.name} - Charity Clinics Booking`,
     clinic: clinic
   });

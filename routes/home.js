@@ -12,14 +12,6 @@ router.get('/', (req, res) => {
 });
 
 
-//booking page
-router.get('/booking-guide', (req, res) => {
-  res.render('booking-guide', {
-    title: 'Booking Guide - Charity Clinics Booking',
-    heading: 'How Clinic Visits Work'
-  });
-});
-
 //contact us page
 router.get('/contactUs', (req, res) => {
   res.render('contactUs', {

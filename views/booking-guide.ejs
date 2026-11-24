@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+
+<main class="container mt-4">
+  <h1><%= heading %></h1>
+  <p class="mb-4">Follow these simple steps to prepare for your charity clinic visit and minimize wait times.</p>
+
+  <div class="row">
+    <% for (let step of steps) { %>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 h-100">
+          <h5>Step <%= step.stepNumber %>: <%= step.title %></h5>
+          <p class="mb-0"><%= step.description %></p>
+        </div>
+      </div>
+    <% } %>
+  </div>
+
+  <a href="/clinics" class="btn btn-primary mt-3">Browse Clinics Now</a>
+</main>
+
+<%- include('./partials/footer') %>

@@ -1,0 +1,30 @@
+<%- include('./partials/header') %>
+
+<main class="container my-4">
+    <h1><%= projectTitle %></h1>
+    
+    <section class="mb-4">
+        <h3>Problem Context</h3>
+        <p><%= problemContext %></p>
+    </section>
+
+    <section class="mb-4">
+        <h3>About the Application</h3>
+        <p><%= projectDescription %></p>
+    </section>
+
+    <section>
+        <h3>Project Team</h3>
+        <% if (teamMembers && teamMembers.length > 0) { %>
+            <ul>
+                <% for (let member of teamMembers) { %>
+                    <li><strong><%= member.name %></strong> (ID: <%= member.id %>) </li>
+                <% } %>
+            </ul>
+        <% } else { %>
+            <p>Team information coming soon.</p>
+        <% } %>
+    </section>
+</main>
+
+<%- include('./partials/footer') %>

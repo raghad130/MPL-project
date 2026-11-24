@@ -11,14 +11,6 @@ router.get('/', (req, res) => {
   });
 });
 
-//about page
-router.get('/about', (req, res) => {
-  res.render('about', {
-    title: 'About Us - Charity Clinics Booking',
-    heading: 'Our Mission',
-    description: 'Connecting patients with community and charity clinics smoothly.'
-  });
-});
 
 //booking page
 router.get('/booking-guide', (req, res) => {
